@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter 1 for Factorial:");
+            Console.WriteLine("Enter 1 for Factorial:\nEnter 2 for FlipCoin:");
             int input = int.Parse(Console.ReadLine());
             switch (input)
             {
@@ -14,6 +14,10 @@
                     Factorial factorial = new Factorial();
                     int result = factorial.Fact(inp);
                     Console.WriteLine($"factorial of {inp} is : {result}");
+                    break;
+                case 2:
+                    FlipCoin flipCoin = new FlipCoin();
+                    flipCoin.flipCoin();
                     break;
                 default:
                     Console.WriteLine("Invalid Entry");
